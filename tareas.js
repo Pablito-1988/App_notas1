@@ -2,9 +2,9 @@ const fs = require('fs')
 const chalk = require('chalk')
 const tareasJson = JSON.parse(fs.readFileSync(__dirname + '/notas.json', 'utf-8'))
 let yargs = require('yargs')
-let comando = yargs.argv.comando //lee por consola --comando y asigna como valor lo que sigue
-let titulo = yargs.argv.titulo //lee por consola --titulo y asigna como valor lo que sigue
-let estado = yargs.argv.estado//lee por consola --estado y asigna como valor lo que sigue
+let comando = yargs.argv.comando 
+let titulo = yargs.argv.titulo 
+let estado = yargs.argv.estado
 
 
 //agrgando como parametro el __dirname + la ruta de archivo json) devuelve 
