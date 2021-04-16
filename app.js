@@ -15,7 +15,7 @@ switch (comando) {
         //para crear una tarea recoda que hay que agragar el --comando --titulo --estado 
         return tareas.guardarTarea({ titulo, estado });
         break;
-    //filtra las tareas por el estado la sintaxis es node app --comando filtrar --estado #
+    //filtra las tareas por el estado la sintaxis es node app --comando filtrar --estado entre " "
     case 'filtrar':
         return console.log(tareas.leerPorEstado(estado));
         break;
